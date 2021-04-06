@@ -1,10 +1,10 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getPokemonsAction, nextPokemonsAction } from "../redux/pokeDucks";
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { getPokemonsAction, nextPokemonsAction } from '../redux/pokeDucks'
 
-export default function Pokemons() {
-  const dispatch = useDispatch();
-  const pokemons = useSelector((store) => store.pokemons.array);
+export default function Pokemons () {
+  const dispatch = useDispatch()
+  const pokemons = useSelector((store) => store.pokemons.array)
   return (
     <div>
       <h1>Lista de Pokemones</h1>
@@ -18,5 +18,5 @@ export default function Pokemons() {
         ))}
       </ul>
     </div>
-  );
+  )
 }
